@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index'])->name('admin_home')->middleware('auth');
+Route::get('/admin/login', [AdminController::class, 'login'])->name('admin_login');
+Route::post('/admin/logincheck', [AdminController::class, 'logincheck'])->name('admin_logincheck');
+Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin_logout');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
