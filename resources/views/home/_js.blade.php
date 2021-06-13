@@ -3,6 +3,7 @@
 <script src="{{asset('assets')}}/vendor/jquery.appear/jquery.appear.min.js"></script>
 <script src="{{asset('assets')}}/vendor/jquery.easing/jquery.easing.min.js"></script>
 <script src="{{asset('assets')}}/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+<script src="{{asset('assets')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="{{asset('assets')}}/vendor/popper/umd/popper.min.js"></script>
 <script src="{{asset('assets')}}/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{asset('assets')}}/vendor/common/common.min.js"></script>
@@ -33,7 +34,7 @@
 
 
 <!-- Demo -->
-<script src="{{asset('assets')}}/js/demos/demo-education.js"></script>
+<script src="{{asset('assets')}}/js/demos/demo-law-firm-2.js"></script>
 
 <!-- Theme Custom -->
 <script src="{{asset('assets')}}/js/custom.js"></script>

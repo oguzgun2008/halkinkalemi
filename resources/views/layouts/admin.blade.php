@@ -23,6 +23,14 @@
     <script>
         Breakpoints();
     </script>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/libs/bower/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/libs/bower/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/libs/bower/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/libs/bower/switchery/dist/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/libs/bower/lightbox2/dist/css/lightbox.min.css">
+
+@yield('css')
+    @yield('javascript')
 </head>
 
 <body class="menubar-left menubar-unfold menubar-light theme-primary">
@@ -42,6 +50,7 @@
 @include('admin._appcustomizer')
 @include('admin._rightsidebar')
 @include('admin._js')
+@yield('script')
 </body>
 </html>
 

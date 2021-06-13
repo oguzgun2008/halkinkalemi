@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+    <link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" type="text/css">
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/vendor/bootstrap/css/bootstrap.min.css">
@@ -37,16 +37,13 @@
     <link rel="stylesheet" href="{{asset('assets')}}/css/theme-blog.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/theme-shop.css">
 
-    <!-- Current Page CSS -->
-    <link rel="stylesheet" href="{{asset('assets')}}/vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/vendor/rs-plugin/css/navigation.css">
+
 
     <!-- Demo CSS -->
-    <link rel="stylesheet" href="{{asset('assets')}}/css/demos/demo-education.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/demos/demo-law-firm-2.css">
 
     <!-- Skin CSS -->
-    <link rel="stylesheet" href="{{asset('assets')}}/css/skins/skin-education.css">
+    <link id="skinCSS" rel="stylesheet" href="{{asset('assets')}}/css/skins/skin-law-firm-2.css">
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/css/custom.css">
@@ -60,6 +57,7 @@
     @include('home._header')
     <div role="main" class="main">
         @include('home._slider')
+        @include('home._altslider')
         @section('content')
             içerik alanı
         @show

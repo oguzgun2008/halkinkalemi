@@ -16,3 +16,14 @@
 <script src="{{asset('assets')}}/libs/bower/moment/moment.js"></script>
 <script src="{{asset('assets')}}/libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="{{asset('assets')}}/assets/js/fullcalendar.js"></script>
+<script src="{{asset('assets')}}/libs/bower/select2/dist/js/select2.full.min.js"></script>
+
+<!-- summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<script type="text/javascript">
+    $('#summernote').summernote({
+        height: 400
+    });
+</script>
+
